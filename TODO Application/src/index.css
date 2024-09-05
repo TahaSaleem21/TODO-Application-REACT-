@@ -1,0 +1,219 @@
+:root {
+  --primary-color: #007bff;
+  --delete-color: #dc3545;
+  --bg-color-light: #ffffff;
+  --bg-color-dark: #343a40;
+  --text-color-light: #212529;
+  --text-color-dark: #e9ecef;
+  --input-border-color: #ced4da;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+.app-header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.controls {
+  margin-left: auto;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #0056b3;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+}
+
+.list {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-title-input {
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  font-size: 1.2rem;
+  padding: 5px;
+  width: 100%;
+}
+
+.list-action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+.rename-btn {
+  color: var(--primary-color);
+}
+
+.rename-btn:hover {
+  color: #0056b3;
+}
+
+.delete-btn {
+  color: var(--delete-color);
+}
+
+.delete-btn:hover {
+  color: #c82333;
+}
+
+.list-cards {
+  margin-top: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-edit-input {
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.card-action-btn {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.edit-btn {
+  color: #007bff;
+}
+
+.edit-btn:hover {
+  color: #0056b3;
+}
+
+.delete-btn {
+  color: #dc3545;
+}
+
+.delete-btn:hover {
+  color: #c82333;
+}
+
+.add-card {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.add-card-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-card-btn:hover {
+  background-color: #0056b3;
+}
+
+.dark-mode .card {
+  background-color: #495057;
+  color: #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .list {
+  background-color: #343a40;
+  color: #e9ecef;
+}
+
+.dark-mode .list-cards {
+  border: 1px solid #495057;
+}
+
+.dark-mode .card-action-btn {
+  color: #e9ecef;
+}
+
+.dark-mode .card-action-btn:hover {
+  color: #f8f9fa;
+}
